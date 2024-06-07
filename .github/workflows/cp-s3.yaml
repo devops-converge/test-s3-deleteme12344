@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ '**' ]  # This listens to pushes on all branches
+  pull_request:
+    branches: [ '**' ]  # This listens to PRs targeting all branches
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.

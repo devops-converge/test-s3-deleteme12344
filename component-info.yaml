@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "s3-deleteme11"
+  annotations:
+    github.com/project-slug: devops-converge/test-s3-deleteme12344
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-label-selector: 'app=nginx'
+  #title: 'IA for S3 Automation' # you can give any title
+  title: "s3-deleteme11" 
+  description: An example of a S3 Creation. # Change Description accordingly
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
